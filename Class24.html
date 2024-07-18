@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Coding for kids</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    body{
+    font: 400 15px Lato, sans-serif;
+    line-height:1.8;
+    color:#818181;
+    }
+    h2{
+    font-size:24px;
+    text-transform:uppercase;
+    color:#303030;
+    font-weight:600;
+    margin-bottom:30px;
+    }
+    h4{
+    font-size:19px;
+    line-height:1.375em;
+    color:#303030;
+    font-weight:400;
+    margin-bottom:30px;
+    }
+    .jumbotron{
+    background-color:#f4511e;
+    color:#fff;
+    padding:100px 25px;
+    font-family: Montserrat, sans-serif;
+    }
+    .container-fluid{
+    padding:60px 50px;
+    }
+    .bg-grey{
+    background-color:#f6f6f6;
+    }
+    .logo-small{
+    color:#f4511e;
+    font-size:50px;
+    }
+    .logo{
+    color:#f4511e;
+    font-size:200px;
+    }
+    .thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #f4511e;
+}
+.carousel-indicators li {
+  border-color: #f4511e;
+}
+.carousel-indicators li.active {
+  background-color: #f4511e;
+}
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+.item span {
+  font-style: normal;
+}
+.panel {
+  border: 1px solid #f4511e;
+  border-radius: 0 !important;
+  transition: box-shadow 0.5s;
+}
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+}
+.panel-footer .btn:hover {
+  border: 1px solid #f4511e;
+  background-color: #fff !important;
+  color: #f4511e;
+}
+.panel-heading {
+  color: #fff !important;
+  background-color: #f4511e !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.panel-footer {
+  background-color: white !important;
+}
+.panel-footer h3 {
+  font-size: 32px;
+}
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #f4511e;
+  color: #fff;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+
+    </style>
+  </head>
+  <body id = "myPage" data-spy = "scroll" data-target = ".navbar" data-offset = "60">
+   
+   <nav class = "navbar navbar-default navbar-fixed-top">
+   <div class = "container">
+   <div class = "navbar-header">
+   <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+   <span class = "icon-bar"></span>
+   <span class = "icon-bar"></span>
+   <span class = "icon-bar"></span>
+   </button>
+   </div>
+   <div class = "collapse navbar-collapse" id = "myNavbar">
+   <ul class = "nav navbar-nav navbar-right">
+   <li><a href = "https://www.codeyoung.com/about" target = "blank">ABOUT</a></li>
+   <li><a href = "https://www.codeyoung.com/courses" target = "blank">SERVICES</a></li>
+   <li><a href = "https://www.codeyoung.com/student-projects" target = "blank">EXPLORE</a></li>
+   <li><a href = "https://www.codeyoung.com/blog" target = "blank">BLOGS</a></li>
+   <li><a href = "https://www.codeyoung.com/contact" target = "blank">CONTACT</a></li>
+   </ul>
+   </div>
+   </div>
+   </nav>
+
+   <div class = "jumbotron text-center">
+   <h1>CODEYOUNG</h1>
+   <p>Coding For Kids!</p>
+   <form>
+   <div class = "input-group">
+   <input type = "email" class = "form-control" size = "50" placeholder = "Email Adress" required>
+   <div class = "input-group-btn">
+   <button type = "button" class = "btn btn-danger">Subscribe</button>
+   </div>
+   </div>
+   </form>
+   </div>
+   
+   <!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>About Codeyoung</h2><br>
+        <h4>Codeyoung is a platform where your kids can let their imaginations run wild. Students are taught to be creative, innovative and use coding in the most unusual way possible.</h4>
+        <p>Founded by IIT-Delhi alumni Shailendra Dhakad and Rupika Taneja, Codeyoung is on a mission to develop cognitive skills and creative thinking among children through coding.</p>
+        <br><a href="https://www.codeyoung.com" target="blank"><button class="btn btn-default btn-lg">Get in Touch</button></a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://www.codeyoung.com" target="blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5OrD4TbSlkNAmS1sEEHmUHpmi76Pj9PaoXLi99puR8g&usqp=CAU&ec=48600112" style="height:250px; width:250px; margin:auto; padding-left:20px;"></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>Our Values</h2><br>
+        <h4><strong>MISSION:</strong> Our mission is to provide effective and simplified education to empower our students to be the creators of tomorrow.</h4><br>
+        <p><strong>VISION:</strong> Our vision is to enhance the creativity, curiosity and confidence of every child in the world so they become confident individuals who can change the world in the future.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+    <h2>SERVICES</h2>
+    <h4>What we offer</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-arrow-down logo-small"></span>
+        <h4>CHOICE</h4>
+        <p>Group classes or 1:1 – Choose what's the best for you</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-user logo-small"></span>
+        <h4>GURU</h4>
+        <p>Choose your personal Guru from 500+ available mentors</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-facetime-video logo-small"></span>
+        <h4>VIRTUAL CLASSES</h4>
+        <p>Classes are live and take place virtually; attend from anywhere</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-hourglass logo-small"></span>
+        <h4>TIMINGS</h4>
+        <p>Classes happen 2-3 times per week, class duration is 60 min</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-education logo-small"></span>
+        <h4>EDUCATION</h4>
+        <p>Classes are hosted on our proprietary SandboxTM platform</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-certificate logo-small"></span>
+        <h4 style="color:#303030;">CERTIFICATE</h4>
+        <p>Take part in our hosted events to skill up and earn reward</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+    <h2>COURSES</h2>
+    <h4>Simple 3-Step Process To Enroll Your Kid To Any Coding Course</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://www.codeyoung.com/_ipx/w_1280/choose.svg" style="width:200px; height:200px; padding:15px"><br>
+          <h3><strong>Select A Course</strong></h3>
+          <h4>Choose a course of your choice based on the child's age/grade</h4>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://www.codeyoung.com/_ipx/w_1280/subscribe.svg" style="width:200px; height:200px; padding:15px"><br>
+          <h3><strong>Book a FREE trial class</strong></h3>
+          <h4>Choose your mentor of choice from 200+ mentors as well as your preferred time slot.</h4>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://www.codeyoung.com/_ipx/w_1280/success.svg" style="width:200px; height:200px; padding:15px"><br>
+          <h3><strong>Enroll for the course</strong></h3>
+          <h4>If you liked the demo session, enroll for the course & begin your child's exciting journey!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <h4>My son is taking web development class with Codeyoung.<br> I am completely satisfied with the service, teachers and quality. <br><span>Aysha Sajid</span></h4>
+    </div>
+    <div class="item">
+      <h4>One word... WOW!!<br><span>John Doe</span></h4>
+    </div>
+    <div class="item">
+      <h4>CodeYoung is a really good service provider for coding classes. <br>Their teachers and staff are very dedicated. My daughter immediately liked and adored the teacher, Ms Viji Anup who is very kind, dedicated and supportive of her<br><span>Nagarajan Karupanan</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> 2056 Chapman Road STE 105-4, New Castle, Newark, DE 19702, USA<br>
+          The Pearl, 1537 5th Main Rd, Rajiv Gandhi Nagar, Sector 7, HSR Layout, Bengaluru, Karnataka 560102</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +1 (978) 769 2293 (US), +91 72918 23270 (IND)</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> support@codeyoung.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image of location/map -->
+<img src="https://www.codeyoung.com/_nuxt/img/world_map.fc55505.png" class="w3-image w3-greyscale-min" style="width:100%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made by <a href="https://www.codeyoung.com" title="Visit codeyoung">www.codeyoung.com</a></p>
+  <a href="https://www.codeyoung.com" target="blank"><img src="https://www.codeyoung.com/_nuxt/img/codeyoung-logo.4C814AC.svg" style="margin:auto; padding-left:2px;"/></a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
+})
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
